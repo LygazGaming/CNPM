@@ -1,0 +1,73 @@
+﻿@model CNPM.Models.LOPHOCPHAN
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>LOPHOCPHAN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenLHP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLHP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CaHoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CaHoc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Siso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Siso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GIANGVIEN.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GIANGVIEN.HoTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MONHOC.TenMH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MONHOC.TenMH)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

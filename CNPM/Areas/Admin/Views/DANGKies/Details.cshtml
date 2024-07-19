@@ -1,0 +1,59 @@
+﻿@model CNPM.Models.DANGKY
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DANGKY</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DiemChuyenCan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiemChuyenCan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiemGiuaKy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiemGiuaKy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiemCuoiKy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiemCuoiKy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LOPHOCPHAN.TenLHP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOPHOCPHAN.TenLHP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SINHVIEN.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SINHVIEN.HoTen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

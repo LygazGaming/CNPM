@@ -1,0 +1,117 @@
+﻿@model CNPM.Models.GIANGVIEN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content my-2">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Danh sách</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.MaGV }) |
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.HoTen)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.HoTen)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.GioiTinh)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.GioiTinh)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.SoDienThoai)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SoDienThoai)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ChucVu)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ChucVu)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.MatKhau)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MatKhau)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.NgaySinh)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.NgaySinh)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.NgayVaoLam)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.NgayVaoLam)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DiaChi)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.DiaChi)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.KHOA.TenKhoa)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.KHOA.TenKhoa)
+                    </dd>
+
+                </dl>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

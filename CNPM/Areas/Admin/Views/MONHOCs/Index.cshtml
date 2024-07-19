@@ -1,0 +1,70 @@
+﻿@model IEnumerable<CNPM.Models.MONHOC>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content my-2">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Danh sách môn học</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="/admin/monhocs/create" class="btn btn-success">Thêm mới</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <tr>
+                        <th>
+                            Tên môn học
+                        </th>
+                        <th>
+                            Số tín chỉ
+                        </th>
+                        <th>
+                            Tên khoa
+                        </th>
+                        <th>Chức năng</th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenMH)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SoTinChi)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.KHOA.TenKhoa)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.MaMH }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.MaMH }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.MaMH })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

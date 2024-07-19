@@ -1,0 +1,67 @@
+﻿@model CNPM.Models.LOPHOCPHAN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LOPHOCPHAN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenLHP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLHP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CaHoc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CaHoc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Siso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Siso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HK)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HK)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GIANGVIEN.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GIANGVIEN.HoTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MONHOC.TenMH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MONHOC.TenMH)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaLHP }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
