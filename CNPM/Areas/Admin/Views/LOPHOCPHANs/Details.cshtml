@@ -18,8 +18,8 @@
                         <strong>Danh sách</strong>
                     </div>
                     <div class="col-md-6 text-right">
-                        @Html.ActionLink("Edit", "Edit", new { id = Model.MaLHP }) |
-                        @Html.ActionLink("Back to List", "Index")
+                        @Html.ActionLink("Quay về", "Index", null, new { @class = "btn btn-info" })
+                        @Html.ActionLink("Sửa", "Edit", new { id = Model.MaLHP }, new { @class = "btn btn-primary" })
                     </div>
                 </div>
 

@@ -15,12 +15,13 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-md-6">
-                        <strong>Danh sách</strong>
+                        <strong>Chi tiết môn học</strong>
                     </div>
                     <div class="col-md-6 text-right">
-                        @Html.ActionLink("Edit", "Edit", new { id = Model.MaMH }) |
-                        @Html.ActionLink("Back to List", "Index")
+                        @Html.ActionLink("Quay về", "Index", null, new { @class = "btn btn-info" })
+                        @Html.ActionLink("Sửa", "Edit", new { id = Model.MaMH }, new { @class = "btn btn-primary" })
                     </div>
+
                 </div>
 
             </div>
