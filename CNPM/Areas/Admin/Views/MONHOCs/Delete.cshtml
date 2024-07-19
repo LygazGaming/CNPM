@@ -4,46 +4,67 @@
     ViewBag.Title = "Delete";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content my-2">
 
-<h2>Delete</h2>
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Danh sách</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
+                    </div>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>MONHOC</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TenMH)
-        </dt>
+                </div>
+                <div class="card-body">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Tên môn học
+                        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TenMH)
-        </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.TenMH)
+                        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SoTinChi)
-        </dt>
+                        <dt>
+                            Số tín chỉ
+                        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SoTinChi)
-        </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.SoTinChi)
+                        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.KHOA.TenKhoa)
-        </dt>
+                        <dt>
+                            Tên khoa
+                        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.KHOA.TenKhoa)
-        </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.KHOA.TenKhoa)
+                        </dd>
 
-    </dl>
+                    </dl>
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Delete" class="btn btn-default" />
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+}
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
-    }
-</div>
+
+

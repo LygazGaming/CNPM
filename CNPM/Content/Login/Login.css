@@ -1,0 +1,69 @@
+﻿body {
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+}
+
+#frame {
+    margin-top: 10vh;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 5%;
+    border-color: darkblue;
+}
+
+    #frame div.login {
+        text-align: center;
+    }
+
+    #frame .login #formLogin {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+    }
+
+        #frame .login #formLogin input {
+            width: 300px;
+            height: 30px;
+            transition: 1/2s;
+        }
+
+input:hover {
+    border: 1px solid red;
+}
+
+input:focus {
+    outline: none;
+}
+
+#frame .login #formLogin #pass {
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+#frame button.btnNormal {
+    width: 180px;
+    height: 35px;
+    cursor: pointer;
+    font-size: medium;
+    transition: 1s;
+}
+
+    #frame button.btnNormal:hover {
+        background-color: brown;
+        border: none;
+        color: aliceblue;
+    }
+
+#frame div.login #forgetPass {
+    color: black;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}

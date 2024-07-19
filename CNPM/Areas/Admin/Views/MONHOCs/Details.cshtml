@@ -5,39 +5,58 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Details</h2>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content my-2">
 
-<div>
-    <h4>MONHOC</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TenMH)
-        </dt>
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Danh sách</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.MaMH }) |
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.TenMH)
-        </dd>
+            </div>
+            <div class="card-body">
+                <dl class="dl-horizontal">
+                    <dt>
+                        Tên môn học
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SoTinChi)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.TenMH)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.SoTinChi)
-        </dd>
+                    <dt>
+                        Số tín chỉ
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.KHOA.TenKhoa)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.SoTinChi)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.KHOA.TenKhoa)
-        </dd>
+                    <dt>
+                        Tên khoa
+                    </dt>
 
-    </dl>
+                    <dd>
+                        @Html.DisplayFor(model => model.KHOA.TenKhoa)
+                    </dd>
+
+                </dl>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MaMH }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<!-- /.content-wrapper -->

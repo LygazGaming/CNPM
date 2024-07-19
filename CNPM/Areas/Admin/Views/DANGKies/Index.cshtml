@@ -14,10 +14,10 @@
             <div class="card-header">
                 <div class="row">
                     <div class="col-md-6">
-                        <strong>Đăng kí</strong>
+                        <strong>Điểm</strong>
                     </div>
                     <div class="col-md-6 text-right">
-                        <a href="/admin/dangkies/create" class="btn btn-success">Thêm mới</a>
+                        <a href="/admin/dangkies/create" class="btn btn-success">Nhập điểm</a>
                     </div>
                 </div>
 
@@ -40,7 +40,7 @@
                         <th>
                             Điểm cuối kì
                         </th>
-                        <th>Chức năng</th>
+                        @*<th>Chức năng</th>*@
                     </tr>
 
                     @foreach (var item in Model)
@@ -61,11 +61,11 @@
                             <td>
                                 @Html.DisplayFor(modelItem => item.DiemCuoiKy)
                             </td>
-                            <td>
+                            @*<td>
                                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                            </td>
+                            </td>*@
                         </tr>
                     }
 

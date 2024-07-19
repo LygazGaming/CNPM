@@ -5,6 +5,7 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Main content -->
@@ -51,9 +52,9 @@
                                 @Html.DisplayFor(modelItem => item.KHOA.TenKhoa)
                             </td>
                             <td>
-                                @Html.ActionLink("Edit", "Edit", new { id = item.MaMH }) |
-                                @Html.ActionLink("Details", "Details", new { id = item.MaMH }) |
-                                @Html.ActionLink("Delete", "Delete", new { id = item.MaMH })
+                                <a href="/admin/monhocs/details/@item.MaMH" class="btn btn-sm btn-info">Chi tiết</a>
+                                <a href="/admin/monhocs/edit/@item.MaMH" class="btn btn-sm btn-primary">Sửa</a>
+                                <a href="/admin/monhocs/delete/@item.MaMH" class="btn btn-sm btn-danger">Xóa</a>
                             </td>
                         </tr>
                     }
@@ -61,10 +62,10 @@
                 </table>
             </div>
             <!-- /.card-body -->
+            <!-- /.card-body -->
         </div>
         <!-- /.card -->
 
     </section>
     <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->

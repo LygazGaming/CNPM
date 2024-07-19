@@ -4,53 +4,69 @@
     ViewBag.Title = "Edit";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
-
-<h2>Edit</h2>
-
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>DANGKY</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.MaSV)
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.MaSV)
 
-        @Html.HiddenFor(model => model.MaLHP)
+    @Html.HiddenFor(model => model.MaLHP)
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content my-2">
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.DiemChuyenCan, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DiemChuyenCan, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.DiemChuyenCan, "", new { @class = "text-danger" })
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Danh sách</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DiemChuyenCan, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DiemChuyenCan, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DiemChuyenCan, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DiemGiuaKy, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DiemGiuaKy, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DiemGiuaKy, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.DiemCuoiKy, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DiemCuoiKy, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DiemCuoiKy, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Save" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-body -->
             </div>
-        </div>
+            <!-- /.card -->
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.DiemGiuaKy, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DiemGiuaKy, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.DiemGiuaKy, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.DiemCuoiKy, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.DiemCuoiKy, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.DiemCuoiKy, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
-            </div>
-        </div>
+        </section>
+        <!-- /.content -->
     </div>
-}
+    <!-- /.content-wrapper -->
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+}

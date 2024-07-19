@@ -5,63 +5,82 @@
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Details</h2>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content my-2">
 
-<div>
-    <h4>LOPHOCPHAN</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TenLHP)
-        </dt>
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Danh sách</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.MaLHP }) |
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.TenLHP)
-        </dd>
+            </div>
+            <div class="card-body">
+                <dl class="dl-horizontal">
+                    <dt>
+                        Tên lớp học phần
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CaHoc)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.TenLHP)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.CaHoc)
-        </dd>
+                    <dt>
+                        Ca học
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Siso)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.CaHoc)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Siso)
-        </dd>
+                    <dt>
+                        Sĩ số
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.HK)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Siso)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.HK)
-        </dd>
+                    <dt>
+                        Học kì
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.GIANGVIEN.HoTen)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.HK)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.GIANGVIEN.HoTen)
-        </dd>
+                    <dt>
+                        Họ và tên giảng viên
+                    </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.MONHOC.TenMH)
-        </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.GIANGVIEN.HoTen)
+                    </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.MONHOC.TenMH)
-        </dd>
+                    <dt>
+                        Tên môn học
+                    </dt>
 
-    </dl>
+                    <dd>
+                        @Html.DisplayFor(model => model.MONHOC.TenMH)
+                    </dd>
+
+                </dl>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MaLHP }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<!-- /.content-wrapper -->

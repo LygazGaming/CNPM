@@ -4,62 +4,78 @@
     ViewBag.Title = "Delete";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content my-2">
 
-<h2>Delete</h2>
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Danh sách</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
+                    </div>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>DANGKY</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.DiemChuyenCan)
-        </dt>
+                </div>
+                <div class="card-body">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DiemChuyenCan)
+                        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DiemChuyenCan)
-        </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.DiemChuyenCan)
+                        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DiemGiuaKy)
-        </dt>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DiemGiuaKy)
+                        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DiemGiuaKy)
-        </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.DiemGiuaKy)
+                        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DiemCuoiKy)
-        </dt>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DiemCuoiKy)
+                        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DiemCuoiKy)
-        </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.DiemCuoiKy)
+                        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.LOPHOCPHAN.TenLHP)
-        </dt>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.LOPHOCPHAN.TenLHP)
+                        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.LOPHOCPHAN.TenLHP)
-        </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.LOPHOCPHAN.TenLHP)
+                        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SINHVIEN.HoTen)
-        </dt>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.SINHVIEN.HoTen)
+                        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SINHVIEN.HoTen)
-        </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.SINHVIEN.HoTen)
+                        </dd>
 
-    </dl>
+                    </dl>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+}
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
-    }
-</div>

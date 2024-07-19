@@ -1,0 +1,57 @@
+﻿@model Manager.Models.SINHVIEN
+@{
+    ViewBag.Title = "Information";
+    Layout = "~/Views/Shared/LayoutSV.cshtml";
+}
+<link rel="stylesheet" href="~/Content/LayoutSV/information.css" />
+<main>
+    <div class="containerInfor">
+        <h2>Thông tin sinh viên</h2>
+        <div class="student-info">
+            <div class="profile-picture">
+                <img src="profile-placeholder.png" alt="Profile Picture">
+            </div>
+            <div class="info-section">
+                <div class="info-group">
+                    <h3 class="Infor">Thông tin khóa học</h3>
+                    <p>Khóa học: Đại học chính quy Khóa 2022</p>
+                    <p>Chức vụ: Tôn giáo</p>
+                    <p>Đối tượng: Quốc gia</p>
+                    <p>THPT lớp 12: </p>
+                    <p>Đoàn: </p>
+                    <p>Ngày vào đoàn: </p>
+                </div>
+                <div class="info-group1">
+                    <h3 class="Infor">Thông tin liên lạc</h3>
+                    <p>Dân tộc: </p>
+                    <p>Tôn giáo: </p>
+                    <p>Quốc gia: </p>
+                    <p>Tỉnh thành: </p>
+                    <p>Quận huyện: </p>
+                    <p>Di động: @Session["SoDienThoai"]</p>
+                    <p>ĐT bàn: </p>
+                    <p><a style="cursor: no-drop" class="btnCN">[Cập nhật thông tin cá nhân]</a></p>
+                </div>
+            </div>
+                <div class="personal-info">
+                    <p>Mã SV: <strong>@Session["MaSV"]</strong></p>
+                    <p>Họ tên: <strong>@Session["Name"]</strong></p>
+                    <p>Giới tính: <strong>@Session["GioiTinh"]</strong></p>
+                    <p>CMND: <strong></strong></p>
+                    <p>Tình trạng học: <strong>@Session["Email"]</strong></p>
+                    <p>Niên khóa: <strong>2022 - 2026</strong></p>
+                    <p>Email trường: <strong>@Session["MaKhoa"]</strong></p>
+                    <p>Email cá nhân: <strong>@Session["Email"]</strong></p>
+                    <p>Địa chỉ liên lạc: <strong></strong></p>
+                </div>
+            <div class="contact-info">
+                <h3 class="Infor">Thông tin người liên hệ</h3>
+                <p>Họ tên người liên hệ: <strong></strong></p>
+                <p>Địa chỉ người liên hệ: <strong></strong></p>
+                <p>Điện thoại người liên hệ: <strong></strong></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
