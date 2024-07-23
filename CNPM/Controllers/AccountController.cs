@@ -24,10 +24,18 @@ namespace Manager.Controllers
         {
             if (ModelState.IsValid)
             {
-                var userCheck = db.SINHVIEN.Where(x => x.Email.Equals(EMAIL) && x.MatKhau.Equals(PASSWORD)).ToList();
-                if (EMAIL == "admin" && PASSWORD == "1")
+                var userCheck = db.SINHVIENs.Where(x => x.Email.Equals(EMAIL) && x.MatKhau.Equals(PASSWORD)).ToList();
+                if (EMAIL == "admin")
                 {
-                    return RedirectToAction("Index", "Home");
+                    var adminCheck = db.ADMIN_ACCOUNT.Where(x=> x.MatKhau == PASSWORD).ToList();
+                    if(adminCheck.Count() > 0)
+                    {
+                        return Redirect("/Admin/Home/Index");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Error");
+                    }
                 }
                 if (userCheck.Count() > 0)
                 {
@@ -43,6 +51,7 @@ namespace Manager.Controllers
                 {
                     return RedirectToAction("Error");
                 }
+
             }
             return View();
         }

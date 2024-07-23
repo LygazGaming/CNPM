@@ -17,7 +17,7 @@ namespace CNPM.Areas.Admin.Controllers
         // GET: Admin/MONHOCs
         public ActionResult Index()
         {
-            var mONHOC = db.MONHOC.Include(m => m.KHOA);
+            var mONHOC = db.MONHOCs.Include(m => m.KHOA);
             return View(mONHOC.ToList());
         }
 
@@ -28,7 +28,7 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MONHOC mONHOC = db.MONHOC.Find(id);
+            MONHOC mONHOC = db.MONHOCs.Find(id);
             if (mONHOC == null)
             {
                 return HttpNotFound();
@@ -39,7 +39,7 @@ namespace CNPM.Areas.Admin.Controllers
         // GET: Admin/MONHOCs/Create
         public ActionResult Create()
         {
-            ViewBag.MaKhoa = new SelectList(db.KHOA, "MaKhoa", "TenKhoa");
+            ViewBag.MaKhoa = new SelectList(db.KHOAs, "MaKhoa", "TenKhoa");
             return View();
         }
 
@@ -52,12 +52,12 @@ namespace CNPM.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.MONHOC.Add(mONHOC);
+                db.MONHOCs.Add(mONHOC);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.MaKhoa = new SelectList(db.KHOA, "MaKhoa", "TenKhoa", mONHOC.MaKhoa);
+            ViewBag.MaKhoa = new SelectList(db.KHOAs, "MaKhoa", "TenKhoa", mONHOC.MaKhoa);
             return View(mONHOC);
         }
 
@@ -68,12 +68,12 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MONHOC mONHOC = db.MONHOC.Find(id);
+            MONHOC mONHOC = db.MONHOCs.Find(id);
             if (mONHOC == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.MaKhoa = new SelectList(db.KHOA, "MaKhoa", "TenKhoa", mONHOC.MaKhoa);
+            ViewBag.MaKhoa = new SelectList(db.KHOAs, "MaKhoa", "TenKhoa", mONHOC.MaKhoa);
             return View(mONHOC);
         }
 
@@ -90,7 +90,7 @@ namespace CNPM.Areas.Admin.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.MaKhoa = new SelectList(db.KHOA, "MaKhoa", "TenKhoa", mONHOC.MaKhoa);
+            ViewBag.MaKhoa = new SelectList(db.KHOAs, "MaKhoa", "TenKhoa", mONHOC.MaKhoa);
             return View(mONHOC);
         }
 
@@ -101,7 +101,7 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MONHOC mONHOC = db.MONHOC.Find(id);
+            MONHOC mONHOC = db.MONHOCs.Find(id);
             if (mONHOC == null)
             {
                 return HttpNotFound();
@@ -114,8 +114,8 @@ namespace CNPM.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            MONHOC mONHOC = db.MONHOC.Find(id);
-            db.MONHOC.Remove(mONHOC);
+            MONHOC mONHOC = db.MONHOCs.Find(id);
+            db.MONHOCs.Remove(mONHOC);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

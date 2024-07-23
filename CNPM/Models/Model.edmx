@@ -5,13 +5,20 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="DoAnModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ADMIN_ACCOUNT">
+          <Key>
+            <PropertyRef Name="MaAd" />
+          </Key>
+          <Property Name="MaAd" Type="char" MaxLength="5" Nullable="false" />
+          <Property Name="MatKhau" Type="varchar(max)" />
+        </EntityType>
         <EntityType Name="DANGKY">
           <Key>
             <PropertyRef Name="MaSV" />
             <PropertyRef Name="MaLHP" />
           </Key>
-          <Property Name="MaSV" Type="char" MaxLength="10" Nullable="false" />
-          <Property Name="MaLHP" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="MaSV" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="MaLHP" Type="char" MaxLength="4" Nullable="false" />
           <Property Name="DiemChuyenCan" Type="int" />
           <Property Name="DiemGiuaKy" Type="int" />
           <Property Name="DiemCuoiKy" Type="int" />
@@ -20,13 +27,13 @@
           <Key>
             <PropertyRef Name="MaGV" />
           </Key>
-          <Property Name="MaGV" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="MaGV" Type="char" MaxLength="4" Nullable="false" />
           <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
           <Property Name="GioiTinh" Type="bit" />
           <Property Name="SoDienThoai" Type="char" MaxLength="10" />
           <Property Name="Email" Type="char" MaxLength="20" />
           <Property Name="ChucVu" Type="nvarchar" MaxLength="20" />
-          <Property Name="MatKhau" Type="char" MaxLength="20" />
+          <Property Name="MatKhau" Type="varchar(max)" />
           <Property Name="NgaySinh" Type="date" />
           <Property Name="NgayVaoLam" Type="date" />
           <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
@@ -43,19 +50,19 @@
           <Key>
             <PropertyRef Name="MaLHP" />
           </Key>
-          <Property Name="MaLHP" Type="char" MaxLength="12" Nullable="false" />
+          <Property Name="MaLHP" Type="char" MaxLength="4" Nullable="false" />
           <Property Name="TenLHP" Type="nvarchar" MaxLength="50" />
           <Property Name="CaHoc" Type="int" />
           <Property Name="Siso" Type="int" />
           <Property Name="HK" Type="int" />
-          <Property Name="MaGV" Type="char" MaxLength="10" />
-          <Property Name="MaMH" Type="char" MaxLength="7" />
+          <Property Name="MaGV" Type="char" MaxLength="4" />
+          <Property Name="MaMH" Type="char" MaxLength="4" />
         </EntityType>
         <EntityType Name="MONHOC">
           <Key>
             <PropertyRef Name="MaMH" />
           </Key>
-          <Property Name="MaMH" Type="char" MaxLength="7" Nullable="false" />
+          <Property Name="MaMH" Type="char" MaxLength="4" Nullable="false" />
           <Property Name="TenMH" Type="nvarchar" MaxLength="50" />
           <Property Name="SoTinChi" Type="int" />
           <Property Name="MaKhoa" Type="char" MaxLength="4" />
@@ -64,7 +71,7 @@
           <Key>
             <PropertyRef Name="MaSV" />
           </Key>
-          <Property Name="MaSV" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="MaSV" Type="char" MaxLength="4" Nullable="false" />
           <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
           <Property Name="GioiTinh" Type="bit" />
           <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
@@ -72,18 +79,8 @@
           <Property Name="SoDienThoai" Type="char" MaxLength="10" />
           <Property Name="Email" Type="char" MaxLength="20" />
           <Property Name="NgaySinh" Type="date" />
-          <Property Name="MatKhau" Type="char" MaxLength="20" />
+          <Property Name="MatKhau" Type="varchar(max)" />
           <Property Name="MaKhoa" Type="char" MaxLength="4" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <Association Name="FK_DK_LHP">
           <End Role="LOPHOCPHAN" Type="Self.LOPHOCPHAN" Multiplicity="1" />
@@ -170,13 +167,13 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="DoAnModelStoreContainer">
+          <EntitySet Name="ADMIN_ACCOUNT" EntityType="Self.ADMIN_ACCOUNT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DANGKY" EntityType="Self.DANGKY" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GIANGVIEN" EntityType="Self.GIANGVIEN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="KHOA" EntityType="Self.KHOA" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LOPHOCPHAN" EntityType="Self.LOPHOCPHAN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MONHOC" EntityType="Self.MONHOC" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SINHVIEN" EntityType="Self.SINHVIEN" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_DK_LHP" Association="Self.FK_DK_LHP">
             <End Role="LOPHOCPHAN" EntitySet="LOPHOCPHAN" />
             <End Role="DANGKY" EntitySet="DANGKY" />
@@ -211,13 +208,20 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DoAnModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ADMIN_ACCOUNT">
+          <Key>
+            <PropertyRef Name="MaAd" />
+          </Key>
+          <Property Name="MaAd" Type="String" MaxLength="5" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MatKhau" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
         <EntityType Name="DANGKY">
           <Key>
             <PropertyRef Name="MaSV" />
             <PropertyRef Name="MaLHP" />
           </Key>
-          <Property Name="MaSV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
-          <Property Name="MaLHP" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MaSV" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MaLHP" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="DiemChuyenCan" Type="Int32" />
           <Property Name="DiemGiuaKy" Type="Int32" />
           <Property Name="DiemCuoiKy" Type="Int32" />
@@ -228,19 +232,19 @@
           <Key>
             <PropertyRef Name="MaGV" />
           </Key>
-          <Property Name="MaGV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MaGV" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GioiTinh" Type="Boolean" />
           <Property Name="SoDienThoai" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
           <Property Name="ChucVu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="MatKhau" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="MatKhau" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="NgaySinh" Type="DateTime" Precision="0" />
           <Property Name="NgayVaoLam" Type="DateTime" Precision="0" />
           <Property Name="DiaChi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="MaKhoa" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
           <NavigationProperty Name="KHOA" Relationship="Self.FK_GV_K" FromRole="GIANGVIEN" ToRole="KHOA" />
-          <NavigationProperty Name="LOPHOCPHAN" Relationship="Self.FK_LHP_GV" FromRole="GIANGVIEN" ToRole="LOPHOCPHAN" />
+          <NavigationProperty Name="LOPHOCPHANs" Relationship="Self.FK_LHP_GV" FromRole="GIANGVIEN" ToRole="LOPHOCPHAN" />
         </EntityType>
         <EntityType Name="KHOA">
           <Key>
@@ -248,22 +252,22 @@
           </Key>
           <Property Name="MaKhoa" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="TenKhoa" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="GIANGVIEN" Relationship="Self.FK_GV_K" FromRole="KHOA" ToRole="GIANGVIEN" />
-          <NavigationProperty Name="MONHOC" Relationship="Self.FK_MH_K" FromRole="KHOA" ToRole="MONHOC" />
-          <NavigationProperty Name="SINHVIEN" Relationship="Self.FK_SV_K" FromRole="KHOA" ToRole="SINHVIEN" />
+          <NavigationProperty Name="GIANGVIENs" Relationship="Self.FK_GV_K" FromRole="KHOA" ToRole="GIANGVIEN" />
+          <NavigationProperty Name="MONHOCs" Relationship="Self.FK_MH_K" FromRole="KHOA" ToRole="MONHOC" />
+          <NavigationProperty Name="SINHVIENs" Relationship="Self.FK_SV_K" FromRole="KHOA" ToRole="SINHVIEN" />
         </EntityType>
         <EntityType Name="LOPHOCPHAN">
           <Key>
             <PropertyRef Name="MaLHP" />
           </Key>
-          <Property Name="MaLHP" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MaLHP" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="TenLHP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CaHoc" Type="Int32" />
           <Property Name="Siso" Type="Int32" />
           <Property Name="HK" Type="Int32" />
-          <Property Name="MaGV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
-          <Property Name="MaMH" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
-          <NavigationProperty Name="DANGKY" Relationship="Self.FK_DK_LHP" FromRole="LOPHOCPHAN" ToRole="DANGKY" />
+          <Property Name="MaGV" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+          <Property Name="MaMH" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="DANGKies" Relationship="Self.FK_DK_LHP" FromRole="LOPHOCPHAN" ToRole="DANGKY" />
           <NavigationProperty Name="GIANGVIEN" Relationship="Self.FK_LHP_GV" FromRole="LOPHOCPHAN" ToRole="GIANGVIEN" />
           <NavigationProperty Name="MONHOC" Relationship="Self.FK_LHP_MH" FromRole="LOPHOCPHAN" ToRole="MONHOC" />
         </EntityType>
@@ -271,18 +275,18 @@
           <Key>
             <PropertyRef Name="MaMH" />
           </Key>
-          <Property Name="MaMH" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MaMH" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="TenMH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="SoTinChi" Type="Int32" />
           <Property Name="MaKhoa" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
           <NavigationProperty Name="KHOA" Relationship="Self.FK_MH_K" FromRole="MONHOC" ToRole="KHOA" />
-          <NavigationProperty Name="LOPHOCPHAN" Relationship="Self.FK_LHP_MH" FromRole="MONHOC" ToRole="LOPHOCPHAN" />
+          <NavigationProperty Name="LOPHOCPHANs" Relationship="Self.FK_LHP_MH" FromRole="MONHOC" ToRole="LOPHOCPHAN" />
         </EntityType>
         <EntityType Name="SINHVIEN">
           <Key>
             <PropertyRef Name="MaSV" />
           </Key>
-          <Property Name="MaSV" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MaSV" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GioiTinh" Type="Boolean" />
           <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
@@ -290,20 +294,10 @@
           <Property Name="SoDienThoai" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
           <Property Name="NgaySinh" Type="DateTime" Precision="0" />
-          <Property Name="MatKhau" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="MatKhau" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
           <Property Name="MaKhoa" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
-          <NavigationProperty Name="DANGKY" Relationship="Self.FK_DK_SV" FromRole="SINHVIEN" ToRole="DANGKY" />
+          <NavigationProperty Name="DANGKies" Relationship="Self.FK_DK_SV" FromRole="SINHVIEN" ToRole="DANGKY" />
           <NavigationProperty Name="KHOA" Relationship="Self.FK_SV_K" FromRole="SINHVIEN" ToRole="KHOA" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="Int32" />
-          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <Association Name="FK_DK_LHP">
           <End Role="LOPHOCPHAN" Type="Self.LOPHOCPHAN" Multiplicity="1" />
@@ -390,40 +384,40 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="DoAnEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="DANGKY" EntityType="Self.DANGKY" />
-          <EntitySet Name="GIANGVIEN" EntityType="Self.GIANGVIEN" />
-          <EntitySet Name="KHOA" EntityType="Self.KHOA" />
-          <EntitySet Name="LOPHOCPHAN" EntityType="Self.LOPHOCPHAN" />
-          <EntitySet Name="MONHOC" EntityType="Self.MONHOC" />
-          <EntitySet Name="SINHVIEN" EntityType="Self.SINHVIEN" />
-          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="ADMIN_ACCOUNT" EntityType="Self.ADMIN_ACCOUNT" />
+          <EntitySet Name="DANGKies" EntityType="Self.DANGKY" />
+          <EntitySet Name="GIANGVIENs" EntityType="Self.GIANGVIEN" />
+          <EntitySet Name="KHOAs" EntityType="Self.KHOA" />
+          <EntitySet Name="LOPHOCPHANs" EntityType="Self.LOPHOCPHAN" />
+          <EntitySet Name="MONHOCs" EntityType="Self.MONHOC" />
+          <EntitySet Name="SINHVIENs" EntityType="Self.SINHVIEN" />
           <AssociationSet Name="FK_DK_LHP" Association="Self.FK_DK_LHP">
-            <End Role="LOPHOCPHAN" EntitySet="LOPHOCPHAN" />
-            <End Role="DANGKY" EntitySet="DANGKY" />
+            <End Role="LOPHOCPHAN" EntitySet="LOPHOCPHANs" />
+            <End Role="DANGKY" EntitySet="DANGKies" />
           </AssociationSet>
           <AssociationSet Name="FK_DK_SV" Association="Self.FK_DK_SV">
-            <End Role="SINHVIEN" EntitySet="SINHVIEN" />
-            <End Role="DANGKY" EntitySet="DANGKY" />
+            <End Role="SINHVIEN" EntitySet="SINHVIENs" />
+            <End Role="DANGKY" EntitySet="DANGKies" />
           </AssociationSet>
           <AssociationSet Name="FK_GV_K" Association="Self.FK_GV_K">
-            <End Role="KHOA" EntitySet="KHOA" />
-            <End Role="GIANGVIEN" EntitySet="GIANGVIEN" />
+            <End Role="KHOA" EntitySet="KHOAs" />
+            <End Role="GIANGVIEN" EntitySet="GIANGVIENs" />
           </AssociationSet>
           <AssociationSet Name="FK_LHP_GV" Association="Self.FK_LHP_GV">
-            <End Role="GIANGVIEN" EntitySet="GIANGVIEN" />
-            <End Role="LOPHOCPHAN" EntitySet="LOPHOCPHAN" />
+            <End Role="GIANGVIEN" EntitySet="GIANGVIENs" />
+            <End Role="LOPHOCPHAN" EntitySet="LOPHOCPHANs" />
           </AssociationSet>
           <AssociationSet Name="FK_MH_K" Association="Self.FK_MH_K">
-            <End Role="KHOA" EntitySet="KHOA" />
-            <End Role="MONHOC" EntitySet="MONHOC" />
+            <End Role="KHOA" EntitySet="KHOAs" />
+            <End Role="MONHOC" EntitySet="MONHOCs" />
           </AssociationSet>
           <AssociationSet Name="FK_SV_K" Association="Self.FK_SV_K">
-            <End Role="KHOA" EntitySet="KHOA" />
-            <End Role="SINHVIEN" EntitySet="SINHVIEN" />
+            <End Role="KHOA" EntitySet="KHOAs" />
+            <End Role="SINHVIEN" EntitySet="SINHVIENs" />
           </AssociationSet>
           <AssociationSet Name="FK_LHP_MH" Association="Self.FK_LHP_MH">
-            <End Role="MONHOC" EntitySet="MONHOC" />
-            <End Role="LOPHOCPHAN" EntitySet="LOPHOCPHAN" />
+            <End Role="MONHOC" EntitySet="MONHOCs" />
+            <End Role="LOPHOCPHAN" EntitySet="LOPHOCPHANs" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -432,7 +426,15 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DoAnModelStoreContainer" CdmEntityContainer="DoAnEntities">
-          <EntitySetMapping Name="DANGKY">
+          <EntitySetMapping Name="ADMIN_ACCOUNT">
+            <EntityTypeMapping TypeName="DoAnModel.ADMIN_ACCOUNT">
+              <MappingFragment StoreEntitySet="ADMIN_ACCOUNT">
+                <ScalarProperty Name="MaAd" ColumnName="MaAd" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DANGKies">
             <EntityTypeMapping TypeName="DoAnModel.DANGKY">
               <MappingFragment StoreEntitySet="DANGKY">
                 <ScalarProperty Name="MaSV" ColumnName="MaSV" />
@@ -443,7 +445,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="GIANGVIEN">
+          <EntitySetMapping Name="GIANGVIENs">
             <EntityTypeMapping TypeName="DoAnModel.GIANGVIEN">
               <MappingFragment StoreEntitySet="GIANGVIEN">
                 <ScalarProperty Name="MaGV" ColumnName="MaGV" />
@@ -460,7 +462,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="KHOA">
+          <EntitySetMapping Name="KHOAs">
             <EntityTypeMapping TypeName="DoAnModel.KHOA">
               <MappingFragment StoreEntitySet="KHOA">
                 <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
@@ -468,7 +470,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="LOPHOCPHAN">
+          <EntitySetMapping Name="LOPHOCPHANs">
             <EntityTypeMapping TypeName="DoAnModel.LOPHOCPHAN">
               <MappingFragment StoreEntitySet="LOPHOCPHAN">
                 <ScalarProperty Name="MaLHP" ColumnName="MaLHP" />
@@ -481,7 +483,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="MONHOC">
+          <EntitySetMapping Name="MONHOCs">
             <EntityTypeMapping TypeName="DoAnModel.MONHOC">
               <MappingFragment StoreEntitySet="MONHOC">
                 <ScalarProperty Name="MaMH" ColumnName="MaMH" />
@@ -491,7 +493,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="SINHVIEN">
+          <EntitySetMapping Name="SINHVIENs">
             <EntityTypeMapping TypeName="DoAnModel.SINHVIEN">
               <MappingFragment StoreEntitySet="SINHVIEN">
                 <ScalarProperty Name="MaSV" ColumnName="MaSV" />
@@ -504,17 +506,6 @@
                 <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
                 <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
                 <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="DoAnModel.sysdiagrams">
-              <MappingFragment StoreEntitySet="sysdiagrams">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -532,7 +523,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

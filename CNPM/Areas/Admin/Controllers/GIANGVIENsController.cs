@@ -17,7 +17,7 @@ namespace CNPM.Areas.Admin.Controllers
         // GET: Admin/GIANGVIENs
         public ActionResult Index()
         {
-            var gIANGVIEN = db.GIANGVIEN.Include(g => g.KHOA);
+            var gIANGVIEN = db.GIANGVIENs.Include(g => g.KHOA);
             return View(gIANGVIEN.ToList());
         }
 
@@ -28,7 +28,7 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GIANGVIEN gIANGVIEN = db.GIANGVIEN.Find(id);
+            GIANGVIEN gIANGVIEN = db.GIANGVIENs.Find(id);
             if (gIANGVIEN == null)
             {
                 return HttpNotFound();
@@ -39,7 +39,7 @@ namespace CNPM.Areas.Admin.Controllers
         // GET: Admin/GIANGVIENs/Create
         public ActionResult Create()
         {
-            ViewBag.MaKhoa = new SelectList(db.KHOA, "MaKhoa", "TenKhoa");
+            ViewBag.MaKhoa = new SelectList(db.KHOAs, "MaKhoa", "TenKhoa");
             return View();
         }
 
@@ -52,12 +52,12 @@ namespace CNPM.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.GIANGVIEN.Add(gIANGVIEN);
+                db.GIANGVIENs.Add(gIANGVIEN);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.MaKhoa = new SelectList(db.KHOA, "MaKhoa", "TenKhoa", gIANGVIEN.MaKhoa);
+            ViewBag.MaKhoa = new SelectList(db.KHOAs, "MaKhoa", "TenKhoa", gIANGVIEN.MaKhoa);
             return View(gIANGVIEN);
         }
 
@@ -68,12 +68,12 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GIANGVIEN gIANGVIEN = db.GIANGVIEN.Find(id);
+            GIANGVIEN gIANGVIEN = db.GIANGVIENs.Find(id);
             if (gIANGVIEN == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.MaKhoa = new SelectList(db.KHOA, "MaKhoa", "TenKhoa", gIANGVIEN.MaKhoa);
+            ViewBag.MaKhoa = new SelectList(db.KHOAs, "MaKhoa", "TenKhoa", gIANGVIEN.MaKhoa);
             return View(gIANGVIEN);
         }
 
@@ -90,7 +90,7 @@ namespace CNPM.Areas.Admin.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.MaKhoa = new SelectList(db.KHOA, "MaKhoa", "TenKhoa", gIANGVIEN.MaKhoa);
+            ViewBag.MaKhoa = new SelectList(db.KHOAs, "MaKhoa", "TenKhoa", gIANGVIEN.MaKhoa);
             return View(gIANGVIEN);
         }
 
@@ -101,7 +101,7 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GIANGVIEN gIANGVIEN = db.GIANGVIEN.Find(id);
+            GIANGVIEN gIANGVIEN = db.GIANGVIENs.Find(id);
             if (gIANGVIEN == null)
             {
                 return HttpNotFound();
@@ -114,8 +114,8 @@ namespace CNPM.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            GIANGVIEN gIANGVIEN = db.GIANGVIEN.Find(id);
-            db.GIANGVIEN.Remove(gIANGVIEN);
+            GIANGVIEN gIANGVIEN = db.GIANGVIENs.Find(id);
+            db.GIANGVIENs.Remove(gIANGVIEN);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

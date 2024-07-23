@@ -17,7 +17,7 @@ namespace CNPM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public LOPHOCPHAN()
         {
-            this.DANGKY = new HashSet<DANGKY>();
+            this.DANGKies = new HashSet<DANGKY>();
         }
     
         public string MaLHP { get; set; }
@@ -29,7 +29,7 @@ namespace CNPM.Models
         public string MaMH { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DANGKY> DANGKY { get; set; }
+        public virtual ICollection<DANGKY> DANGKies { get; set; }
         public virtual GIANGVIEN GIANGVIEN { get; set; }
         public virtual MONHOC MONHOC { get; set; }
     }

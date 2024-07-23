@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace CNPM.Areas.Admin.Controllers
 {
-    public class DashBoardController : Controller
+    public class HomeController : Controller
     {
         // GET: Admin/Home
         public ActionResult Index()

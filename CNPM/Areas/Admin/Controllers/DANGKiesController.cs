@@ -17,7 +17,7 @@ namespace CNPM.Areas.Admin.Controllers
         // GET: Admin/DANGKies
         public ActionResult Index()
         {
-            var dANGKY = db.DANGKY.Include(d => d.LOPHOCPHAN).Include(d => d.SINHVIEN);
+            var dANGKY = db.DANGKies.Include(d => d.LOPHOCPHAN).Include(d => d.SINHVIEN);
             return View(dANGKY.ToList());
         }
 
@@ -28,7 +28,7 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            DANGKY dANGKY = db.DANGKY.Find(id);
+            DANGKY dANGKY = db.DANGKies.Find(id);
             if (dANGKY == null)
             {
                 return HttpNotFound();
@@ -39,8 +39,8 @@ namespace CNPM.Areas.Admin.Controllers
         // GET: Admin/DANGKies/Create
         public ActionResult Create()
         {
-            ViewBag.MaLHP = new SelectList(db.LOPHOCPHAN, "MaLHP", "TenLHP");
-            ViewBag.MaSV = new SelectList(db.SINHVIEN, "MaSV", "HoTen");
+            ViewBag.MaLHP = new SelectList(db.LOPHOCPHANs, "MaLHP", "TenLHP");
+            ViewBag.MaSV = new SelectList(db.SINHVIENs, "MaSV", "HoTen");
             return View();
         }
 
@@ -53,13 +53,13 @@ namespace CNPM.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.DANGKY.Add(dANGKY);
+                db.DANGKies.Add(dANGKY);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.MaLHP = new SelectList(db.LOPHOCPHAN, "MaLHP", "TenLHP", dANGKY.MaLHP);
-            ViewBag.MaSV = new SelectList(db.SINHVIEN, "MaSV", "HoTen", dANGKY.MaSV);
+            ViewBag.MaLHP = new SelectList(db.LOPHOCPHANs, "MaLHP", "TenLHP", dANGKY.MaLHP);
+            ViewBag.MaSV = new SelectList(db.SINHVIENs, "MaSV", "HoTen", dANGKY.MaSV);
             return View(dANGKY);
         }
 
@@ -70,13 +70,13 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            DANGKY dANGKY = db.DANGKY.Find(id);
+            DANGKY dANGKY = db.DANGKies.Find(id);
             if (dANGKY == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.MaLHP = new SelectList(db.LOPHOCPHAN, "MaLHP", "TenLHP", dANGKY.MaLHP);
-            ViewBag.MaSV = new SelectList(db.SINHVIEN, "MaSV", "HoTen", dANGKY.MaSV);
+            ViewBag.MaLHP = new SelectList(db.LOPHOCPHANs, "MaLHP", "TenLHP", dANGKY.MaLHP);
+            ViewBag.MaSV = new SelectList(db.SINHVIENs, "MaSV", "HoTen", dANGKY.MaSV);
             return View(dANGKY);
         }
 
@@ -93,8 +93,8 @@ namespace CNPM.Areas.Admin.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.MaLHP = new SelectList(db.LOPHOCPHAN, "MaLHP", "TenLHP", dANGKY.MaLHP);
-            ViewBag.MaSV = new SelectList(db.SINHVIEN, "MaSV", "HoTen", dANGKY.MaSV);
+            ViewBag.MaLHP = new SelectList(db.LOPHOCPHANs, "MaLHP", "TenLHP", dANGKY.MaLHP);
+            ViewBag.MaSV = new SelectList(db.SINHVIENs, "MaSV", "HoTen", dANGKY.MaSV);
             return View(dANGKY);
         }
 
@@ -105,7 +105,7 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            DANGKY dANGKY = db.DANGKY.Find(id);
+            DANGKY dANGKY = db.DANGKies.Find(id);
             if (dANGKY == null)
             {
                 return HttpNotFound();
@@ -118,8 +118,8 @@ namespace CNPM.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            DANGKY dANGKY = db.DANGKY.Find(id);
-            db.DANGKY.Remove(dANGKY);
+            DANGKY dANGKY = db.DANGKies.Find(id);
+            db.DANGKies.Remove(dANGKY);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
