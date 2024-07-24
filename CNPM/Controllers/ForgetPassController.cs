@@ -18,9 +18,10 @@ namespace CNPM.Controllers
     public class ForgetPassController : Controller
     {
 
+
         // GET: ForgetPass
         DoAnEntities db = new DoAnEntities();
-        string code = "";
+        public string code = "";
         string Email = "";
         public ActionResult FormCode()
         {
@@ -29,6 +30,7 @@ namespace CNPM.Controllers
         [HttpPost]
         public ActionResult FormCode(String CODE)
         {
+            string code = TempData["Key"] as string;
             if (CODE.Equals(code))
             {
                 return RedirectToAction("ChangePass");
@@ -52,6 +54,7 @@ namespace CNPM.Controllers
             if (StudentCheck.Count > 0)
             {
                 SendEmail(EMAIL);
+                TempData["Key"] = code;
                 return RedirectToAction("FormCode");
             }
             else
