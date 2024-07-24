@@ -25,12 +25,12 @@ namespace CNPM.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DANGKY> DANGKY { get; set; }
-        public virtual DbSet<GIANGVIEN> GIANGVIEN { get; set; }
-        public virtual DbSet<KHOA> KHOA { get; set; }
-        public virtual DbSet<LOPHOCPHAN> LOPHOCPHAN { get; set; }
-        public virtual DbSet<MONHOC> MONHOC { get; set; }
-        public virtual DbSet<SINHVIEN> SINHVIEN { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<ADMIN_ACCOUNT> ADMIN_ACCOUNT { get; set; }
+        public virtual DbSet<DANGKY> DANGKies { get; set; }
+        public virtual DbSet<GIANGVIEN> GIANGVIENs { get; set; }
+        public virtual DbSet<KHOA> KHOAs { get; set; }
+        public virtual DbSet<LOPHOCPHAN> LOPHOCPHANs { get; set; }
+        public virtual DbSet<MONHOC> MONHOCs { get; set; }
+        public virtual DbSet<SINHVIEN> SINHVIENs { get; set; }
     }
 }

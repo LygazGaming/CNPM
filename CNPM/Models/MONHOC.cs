@@ -17,7 +17,7 @@ namespace CNPM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MONHOC()
         {
-            this.LOPHOCPHAN = new HashSet<LOPHOCPHAN>();
+            this.LOPHOCPHANs = new HashSet<LOPHOCPHAN>();
         }
     
         public string MaMH { get; set; }
@@ -27,6 +27,6 @@ namespace CNPM.Models
     
         public virtual KHOA KHOA { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LOPHOCPHAN> LOPHOCPHAN { get; set; }
+        public virtual ICollection<LOPHOCPHAN> LOPHOCPHANs { get; set; }
     }
 }

@@ -14,8 +14,8 @@ namespace Manager.Controllers
         public ActionResult Information(string email)
         {
             Session["Email"] = email;
-            SINHVIEN sv = db.SINHVIEN.Find(email);
-            var student = db.SINHVIEN.ToList();
+            SINHVIEN sv = db.SINHVIENs.Find(email);
+            var student = db.SINHVIENs.ToList();
             return View();
         }
 

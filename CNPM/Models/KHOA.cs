@@ -17,19 +17,19 @@ namespace CNPM.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KHOA()
         {
-            this.GIANGVIEN = new HashSet<GIANGVIEN>();
-            this.MONHOC = new HashSet<MONHOC>();
-            this.SINHVIEN = new HashSet<SINHVIEN>();
+            this.GIANGVIENs = new HashSet<GIANGVIEN>();
+            this.MONHOCs = new HashSet<MONHOC>();
+            this.SINHVIENs = new HashSet<SINHVIEN>();
         }
     
         public string MaKhoa { get; set; }
         public string TenKhoa { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GIANGVIEN> GIANGVIEN { get; set; }
+        public virtual ICollection<GIANGVIEN> GIANGVIENs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MONHOC> MONHOC { get; set; }
+        public virtual ICollection<MONHOC> MONHOCs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SINHVIEN> SINHVIEN { get; set; }
+        public virtual ICollection<SINHVIEN> SINHVIENs { get; set; }
     }
 }

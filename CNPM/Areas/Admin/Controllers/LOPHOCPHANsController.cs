@@ -17,7 +17,7 @@ namespace CNPM.Areas.Admin.Controllers
         // GET: Admin/LOPHOCPHANs
         public ActionResult Index()
         {
-            var lOPHOCPHAN = db.LOPHOCPHAN.Include(l => l.GIANGVIEN).Include(l => l.MONHOC);
+            var lOPHOCPHAN = db.LOPHOCPHANs.Include(l => l.GIANGVIEN).Include(l => l.MONHOC);
             return View(lOPHOCPHAN.ToList());
         }
 
@@ -28,7 +28,7 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            LOPHOCPHAN lOPHOCPHAN = db.LOPHOCPHAN.Find(id);
+            LOPHOCPHAN lOPHOCPHAN = db.LOPHOCPHANs.Find(id);
             if (lOPHOCPHAN == null)
             {
                 return HttpNotFound();
@@ -39,8 +39,8 @@ namespace CNPM.Areas.Admin.Controllers
         // GET: Admin/LOPHOCPHANs/Create
         public ActionResult Create()
         {
-            ViewBag.MaGV = new SelectList(db.GIANGVIEN, "MaGV", "HoTen");
-            ViewBag.MaMH = new SelectList(db.MONHOC, "MaMH", "TenMH");
+            ViewBag.MaGV = new SelectList(db.GIANGVIENs, "MaGV", "HoTen");
+            ViewBag.MaMH = new SelectList(db.MONHOCs, "MaMH", "TenMH");
             return View();
         }
 
@@ -53,13 +53,13 @@ namespace CNPM.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.LOPHOCPHAN.Add(lOPHOCPHAN);
+                db.LOPHOCPHANs.Add(lOPHOCPHAN);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.MaGV = new SelectList(db.GIANGVIEN, "MaGV", "HoTen", lOPHOCPHAN.MaGV);
-            ViewBag.MaMH = new SelectList(db.MONHOC, "MaMH", "TenMH", lOPHOCPHAN.MaMH);
+            ViewBag.MaGV = new SelectList(db.GIANGVIENs, "MaGV", "HoTen", lOPHOCPHAN.MaGV);
+            ViewBag.MaMH = new SelectList(db.MONHOCs, "MaMH", "TenMH", lOPHOCPHAN.MaMH);
             return View(lOPHOCPHAN);
         }
 
@@ -70,13 +70,13 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            LOPHOCPHAN lOPHOCPHAN = db.LOPHOCPHAN.Find(id);
+            LOPHOCPHAN lOPHOCPHAN = db.LOPHOCPHANs.Find(id);
             if (lOPHOCPHAN == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.MaGV = new SelectList(db.GIANGVIEN, "MaGV", "HoTen", lOPHOCPHAN.MaGV);
-            ViewBag.MaMH = new SelectList(db.MONHOC, "MaMH", "TenMH", lOPHOCPHAN.MaMH);
+            ViewBag.MaGV = new SelectList(db.GIANGVIENs, "MaGV", "HoTen", lOPHOCPHAN.MaGV);
+            ViewBag.MaMH = new SelectList(db.MONHOCs, "MaMH", "TenMH", lOPHOCPHAN.MaMH);
             return View(lOPHOCPHAN);
         }
 
@@ -93,8 +93,8 @@ namespace CNPM.Areas.Admin.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.MaGV = new SelectList(db.GIANGVIEN, "MaGV", "HoTen", lOPHOCPHAN.MaGV);
-            ViewBag.MaMH = new SelectList(db.MONHOC, "MaMH", "TenMH", lOPHOCPHAN.MaMH);
+            ViewBag.MaGV = new SelectList(db.GIANGVIENs, "MaGV", "HoTen", lOPHOCPHAN.MaGV);
+            ViewBag.MaMH = new SelectList(db.MONHOCs, "MaMH", "TenMH", lOPHOCPHAN.MaMH);
             return View(lOPHOCPHAN);
         }
 
@@ -105,7 +105,7 @@ namespace CNPM.Areas.Admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            LOPHOCPHAN lOPHOCPHAN = db.LOPHOCPHAN.Find(id);
+            LOPHOCPHAN lOPHOCPHAN = db.LOPHOCPHANs.Find(id);
             if (lOPHOCPHAN == null)
             {
                 return HttpNotFound();
@@ -118,8 +118,8 @@ namespace CNPM.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            LOPHOCPHAN lOPHOCPHAN = db.LOPHOCPHAN.Find(id);
-            db.LOPHOCPHAN.Remove(lOPHOCPHAN);
+            LOPHOCPHAN lOPHOCPHAN = db.LOPHOCPHANs.Find(id);
+            db.LOPHOCPHANs.Remove(lOPHOCPHAN);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -24,25 +24,51 @@ namespace Manager.Controllers
         {
             if (ModelState.IsValid)
             {
-                var userCheck = db.SINHVIEN.Where(x => x.Email.Equals(EMAIL) && x.MatKhau.Equals(PASSWORD)).ToList();
-                if (EMAIL == "admin" && PASSWORD == "1")
+                var studentCheck = db.SINHVIENs.Where(x => x.Email.Equals(EMAIL) && x.MatKhau.Equals(PASSWORD)).ToList();
+                var professorCheck = db.GIANGVIENs.Where(x => x.Email.Equals(EMAIL) && x.MatKhau.Equals(PASSWORD)).ToList();
+                if (EMAIL == "admin")
                 {
-                    return RedirectToAction("Index", "Home");
-                }
-                if (userCheck.Count() > 0)
-                {
-                    Session["Email"] = userCheck.FirstOrDefault().Email;
-                    Session["SoDienThoai"] = userCheck.FirstOrDefault().SoDienThoai;
-                    Session["MaSV"] = userCheck.FirstOrDefault().MaSV;
-                    Session["Name"] = userCheck.FirstOrDefault().HoTen;
-                    Session["GioiTinh"] = userCheck.FirstOrDefault().GioiTinh;
-                    Session["MaKhoa"] = userCheck.FirstOrDefault().MaKhoa;
-                    return RedirectToAction("Home", "Home");
+                    var adminCheck = db.ADMIN_ACCOUNT.Where(x => x.MatKhau == PASSWORD).ToList();
+                    if (adminCheck.Count() > 0)
+                    {
+                        return Redirect("/Admin/HomeAdmin/Index");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Error");
+                    }
                 }
                 else
                 {
-                    return RedirectToAction("Error");
+                    if (studentCheck.Count() > 0)
+                    {
+                        Session["Email"] = studentCheck.FirstOrDefault().Email;
+                        Session["SoDienThoai"] = studentCheck.FirstOrDefault().SoDienThoai;
+                        Session["MaSV"] = studentCheck.FirstOrDefault().MaSV;
+                        Session["Name"] = studentCheck.FirstOrDefault().HoTen;
+                        Session["GioiTinh"] = studentCheck.FirstOrDefault().GioiTinh;
+                        Session["MaKhoa"] = studentCheck.FirstOrDefault().MaKhoa;
+                        return RedirectToAction("Home", "Home");
+                    }
+                    else
+                    {
+                        if (professorCheck.Count() > 0)
+                        {
+                            Session["Email"] = professorCheck.FirstOrDefault().Email;
+                            Session["SoDienThoai"] = professorCheck.FirstOrDefault().SoDienThoai;
+                            Session["MaGV"] = professorCheck.FirstOrDefault().MaGV;
+                            Session["Name"] = professorCheck.FirstOrDefault().HoTen;
+                            Session["GioiTinh"] = professorCheck.FirstOrDefault().GioiTinh;
+                            Session["MaKhoa"] = professorCheck.FirstOrDefault().MaKhoa;
+                            return RedirectToAction("Home", "Home");
+                        }
+                        else
+                        {
+                            return RedirectToAction("Error");
+                        }
+                    }
                 }
+
             }
             return View();
         }
