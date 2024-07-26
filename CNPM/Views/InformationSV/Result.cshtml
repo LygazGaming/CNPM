@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Timestamp";
+    Layout = "~/Views/Shared/LayoutSV.cshtml";
+}
+<link rel="stylesheet" href="~/Content/LayoutSV/Result.css" />
+<main>
+    <div class="containerKQHT">
+        <h2>Kết quả học tập</h2>
+        <div class="filters">
+            <label for="program">Chương trình đào tạo:</label>
+            <select id="program">
+                <option value="Công nghệ phần mềm">Công nghệ phần mềm</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="year">Năm học:</label>
+            <select id="year">
+                <option value="Tất cả">Tất cả</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="semester">Học kỳ:</label>
+            <select id="semester">
+                <option value="Tất cả">Tất cả</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="legend">
+            <p>Chú ý:</p>
+            <ul>
+                <li>Những môn có dấu (*) sẽ không tính điểm trung bình mà chỉ là môn điều kiện.</li>
+                <li class="success">✓ => Học phần đạt</li>
+                <li class="fail">✗ => Học phần rớt</li>
+            </ul>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã học phần</th>
+                        <th>Tên học phần</th>
+                        <th>Tín chỉ</th>
+                        <th>Điểm hệ 10</th>
+                        <th>Điểm hệ 4</th>
+                        <th>Điểm chữ</th>
+                        <th>Kết quả</th>
+                        <th>Chi tiết</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Repeat this block for each course -->
+                    <tr>
+                        <td>1</td>
+                        <td>1010143</td>
+                        <td>Triết học Mác - Lênin</td>
+                        <td>3.0</td>
+                        <td>5.9</td>
+                        <td>2.00</td>
+                        <td>C</td>
+                        <td class="success">✓</td>
+                        <td><button>Chi tiết</button></td>
+                        <td></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+

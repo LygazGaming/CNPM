@@ -1,0 +1,56 @@
+﻿
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .date h2 {
+        margin: 0;
+    }
+
+.selectors {
+    display: flex;
+    gap: 10px;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.timetable {
+    overflow-x: auto;
+}
+
+.week-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead th {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+body {
+}

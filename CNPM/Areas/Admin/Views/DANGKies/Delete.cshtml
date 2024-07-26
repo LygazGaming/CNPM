@@ -1,0 +1,78 @@
+﻿@model CNPM.Models.DANGKY
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@using (Html.BeginForm("Delete", "DANGKies", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content my-2">
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Xóa bản ghi</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @Html.ActionLink("Quay về danh sách", "Index", null, new { @class = "btn btn-info" })
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MaSV)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.SINHVIEN.HoTen)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MaLHP)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.LOPHOCPHAN.TenLHP)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DiemChuyenCan)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.DiemChuyenCan)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DiemGiuaKy)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.DiemGiuaKy)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DiemCuoiKy)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.DiemCuoiKy)
+                        </dd>
+                    </dl>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Xóa" class="btn btn-danger" />
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+}

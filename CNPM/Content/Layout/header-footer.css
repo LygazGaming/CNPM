@@ -1,0 +1,153 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #ffffff, #ffffff, #98add4, #76a1d4);
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 170px;
+    margin-right: 20px;
+}
+
+.header-title {
+    color: #003366;
+}
+
+    .header-title h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .header-title p {
+        margin: 5px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366;
+    padding: 10px 20px;
+}
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin-right: 20px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+.user-info {
+    color: white;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .footer .section {
+        text-align: left;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+        .footer .section h3 {
+            margin-top: 0;
+            border-bottom: 1px solid #ffffff;
+            padding-bottom: 5px;
+        }
+
+        .footer .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            .footer .section ul li {
+                margin: 5px 0;
+            }
+
+                .footer .section ul li a {
+                    color: #ffff00;
+                    text-decoration: none;
+                }
+
+                    .footer .section ul li a:hover {
+                        text-decoration: underline;
+                    }
+
+    .footer .contact-info {
+        text-align: right;
+    }
+
+        .footer .contact-info p {
+            margin: 5px 0;
+        }
+
+            .footer .contact-info p span {
+                display: block;
+            }

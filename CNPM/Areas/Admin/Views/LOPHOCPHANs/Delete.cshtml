@@ -1,0 +1,97 @@
+﻿@model CNPM.Models.LOPHOCPHAN
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<!-- Content Wrapper. Contains page content -->
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content my-2">
+
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Xóa lớp học phần</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @Html.ActionLink("Quay về", "Index", null, new { @class = "btn btn-info" })
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Tên lớp học phần
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.TenLHP)
+                        </dd>
+
+                        <dt>
+                            Ca học
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.CaHoc)
+                        </dd>
+
+                        <dt>
+                            Sỉ số
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Siso)
+                        </dd>
+
+                        <dt>
+                            Học kì
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.HK)
+                        </dd>
+
+                        <dt>
+                            Họ và tên giảng viên
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.GIANGVIEN.HoTen)
+                        </dd>
+
+                        <dt>
+                            Tên môn học
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.MONHOC.TenMH)
+                        </dd>
+
+                    </dl>
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Xóa" class="btn btn-default" />
+
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+}
+

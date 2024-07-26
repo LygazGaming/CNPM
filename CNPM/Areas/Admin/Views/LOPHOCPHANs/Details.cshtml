@@ -1,0 +1,86 @@
+﻿@model CNPM.Models.LOPHOCPHAN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content my-2">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Danh sách</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        @Html.ActionLink("Quay về", "Index", null, new { @class = "btn btn-info" })
+                        @Html.ActionLink("Sửa", "Edit", new { id = Model.MaLHP }, new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body">
+                <dl class="dl-horizontal">
+                    <dt>
+                        Tên lớp học phần
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TenLHP)
+                    </dd>
+
+                    <dt>
+                        Ca học
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CaHoc)
+                    </dd>
+
+                    <dt>
+                        Sĩ số
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Siso)
+                    </dd>
+
+                    <dt>
+                        Học kì
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.HK)
+                    </dd>
+
+                    <dt>
+                        Họ và tên giảng viên
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.GIANGVIEN.HoTen)
+                    </dd>
+
+                    <dt>
+                        Tên môn học
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MONHOC.TenMH)
+                    </dd>
+
+                </dl>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

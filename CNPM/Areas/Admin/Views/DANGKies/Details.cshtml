@@ -1,0 +1,77 @@
+﻿@model CNPM.Models.DANGKY
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content my-2">
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Chi tiết bản ghi</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                       
+                        @Html.ActionLink(
+                            linkText: "Sửa",
+                            actionName: "Edit",
+                            controllerName: "DangKies",
+                            routeValues: new { MaSV = Model.MaSV, MaLHP = Model.MaLHP },
+                            htmlAttributes: new { @class = "btn btn-primary" }
+                        )
+
+                        @Html.ActionLink("Quay về", "Index", null, new { @class = "btn btn-info" })
+                    </div>
+                </div>  
+            </div>
+            <div class="card-body">
+                <dl class="dl-horizontal">
+                    <dt>
+                        Họ và tên sinh viên
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.SINHVIEN.HoTen)
+                    </dd>
+
+                    <dt>
+                        Tên lớp học phần
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.LOPHOCPHAN.TenLHP)
+                    </dd>
+
+                    <dt>
+                        Điểm chuyên cần
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.DiemChuyenCan)
+                    </dd>
+
+                    <dt>
+                        Điểm giữa kì
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.DiemGiuaKy)
+                    </dd>
+
+                    <dt>
+                        Điểm cuối kì
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.DiemCuoiKy)
+                    </dd>
+                </dl>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

@@ -1,0 +1,86 @@
+﻿@model IEnumerable<CNPM.Models.LOPHOCPHAN>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content my-2">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Danh sách lớp học phần</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="/admin/lophocphans/create" class="btn btn-success">Thêm mới</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <tr>
+                        <th>
+                            Tên lớp học phần
+                        </th>
+                        <th>
+                            Ca học
+                        </th>
+                        <th>
+                            Sỉ số
+                        </th>
+                        <th>
+                            Học kì
+                        </th>
+                        <th>
+                            Họ tên giảng viên
+                        </th>
+                        <th>
+                            Tên môn học
+                        </th>
+                        <th>Chức năng</th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TenLHP)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CaHoc)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Siso)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.HK)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.GIANGVIEN.HoTen)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MONHOC.TenMH)
+                            </td>
+                            <td>
+                                <a href="/admin/lophocphans/details/@item.MaLHP" class="btn btn-sm btn-info">Chi tiết</a>
+                                <a href="/admin/lophocphans/edit/@item.MaLHP" class="btn btn-sm btn-primary">Sửa</a>
+                                <a href="/admin/lophocphans/delete/@item.MaLHP" class="btn btn-sm btn-danger">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->

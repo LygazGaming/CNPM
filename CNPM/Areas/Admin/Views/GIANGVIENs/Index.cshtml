@@ -1,0 +1,114 @@
+﻿@model IEnumerable<CNPM.Models.GIANGVIEN>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content my-2">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Danh sách giảng viên</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="/admin/Giangviens/create" class="btn btn-success">Thêm mới</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                Họ và tên
+                            </th>
+                            <th>
+                                Giới tính
+                            </th>
+                            <th>
+                                Số điện thoại
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Chức vụ
+                            </th>
+                            <th>
+                                Mật khẩu
+                            </th>
+                            <th>
+                                Ngày sinh
+                            </th>
+                            <th>
+                                Ngày vào làm
+                            </th>
+                            <th>
+                                Địa chỉ
+                            </th>
+                            <th>
+                                Tên khoa
+                            </th>
+                            <th>Chức năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.HoTen)
+                                </td>
+                                <td>
+                                    @((item.GioiTinh.HasValue && item.GioiTinh.Value) ? "Nam" : "Nữ")
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SoDienThoai)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ChucVu)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MatKhau)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgaySinh)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NgayVaoLam)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DiaChi)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.KHOA.TenKhoa)
+                                </td>
+                                <td>
+                                    <a href="/admin/giangviens/details/@item.MaGV" class="btn btn-sm btn-info">Chi tiết</a>
+                                    <a href="/admin/giangviens/edit/@item.MaGV" class="btn btn-sm btn-primary">Sửa</a>
+                                    <a href="/admin/giangviens/delete/@item.MaGV" class="btn btn-sm btn-danger">Xóa</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+

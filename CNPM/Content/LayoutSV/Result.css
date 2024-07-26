@@ -1,0 +1,57 @@
+﻿
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters, .legend {
+    margin-bottom: 20px;
+}
+
+    .filters label, .filters select {
+        margin-right: 10px;
+    }
+
+.legend {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+    .legend p {
+        margin: 0;
+    }
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.highlight {
+    background-color: #ffff99;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
+}body {
+}

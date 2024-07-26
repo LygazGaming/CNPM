@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DoAnModelStoreContainer" CdmEntityContainer="DoAnEntities">
+    <EntitySetMapping Name="ADMIN_ACCOUNT">
+      <EntityTypeMapping TypeName="DoAnModel.ADMIN_ACCOUNT">
+        <MappingFragment StoreEntitySet="ADMIN_ACCOUNT">
+          <ScalarProperty Name="MaAd" ColumnName="MaAd" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DANGKY">
+      <EntityTypeMapping TypeName="DoAnModel.DANGKY">
+        <MappingFragment StoreEntitySet="DANGKY">
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="MaLHP" ColumnName="MaLHP" />
+          <ScalarProperty Name="DiemChuyenCan" ColumnName="DiemChuyenCan" />
+          <ScalarProperty Name="DiemGiuaKy" ColumnName="DiemGiuaKy" />
+          <ScalarProperty Name="DiemCuoiKy" ColumnName="DiemCuoiKy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIANGVIEN">
+      <EntityTypeMapping TypeName="DoAnModel.GIANGVIEN">
+        <MappingFragment StoreEntitySet="GIANGVIEN">
+          <ScalarProperty Name="MaGV" ColumnName="MaGV" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="NgayVaoLam" ColumnName="NgayVaoLam" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHOA">
+      <EntityTypeMapping TypeName="DoAnModel.KHOA">
+        <MappingFragment StoreEntitySet="KHOA">
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+          <ScalarProperty Name="TenKhoa" ColumnName="TenKhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOPHOCPHAN">
+      <EntityTypeMapping TypeName="DoAnModel.LOPHOCPHAN">
+        <MappingFragment StoreEntitySet="LOPHOCPHAN">
+          <ScalarProperty Name="MaLHP" ColumnName="MaLHP" />
+          <ScalarProperty Name="TenLHP" ColumnName="TenLHP" />
+          <ScalarProperty Name="CaHoc" ColumnName="CaHoc" />
+          <ScalarProperty Name="Siso" ColumnName="Siso" />
+          <ScalarProperty Name="HK" ColumnName="HK" />
+          <ScalarProperty Name="MaGV" ColumnName="MaGV" />
+          <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONHOC">
+      <EntityTypeMapping TypeName="DoAnModel.MONHOC">
+        <MappingFragment StoreEntitySet="MONHOC">
+          <ScalarProperty Name="MaMH" ColumnName="MaMH" />
+          <ScalarProperty Name="TenMH" ColumnName="TenMH" />
+          <ScalarProperty Name="SoTinChi" ColumnName="SoTinChi" />
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SINHVIEN">
+      <EntityTypeMapping TypeName="DoAnModel.SINHVIEN">
+        <MappingFragment StoreEntitySet="SINHVIEN">
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NienKhoa" ColumnName="NienKhoa" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+          <ScalarProperty Name="MaKhoa" ColumnName="MaKhoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,549 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|c:\\users\\lygazgaming\\desktop\\cnpm\\cnpm\\cnpm_new\\cnpm\\areas\\admin\\controllers\\khoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\controllers\\khoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\controllers\\dangkiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\controllers\\dangkiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\controllers\\sinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\controllers\\sinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\controllers\\giangvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\controllers\\giangvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\giangviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\giangviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\shared\\_partiasidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\shared\\_partiasidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\dangkies\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\dangkies\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\dangkies\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\dangkies\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\dangkies\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\dangkies\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\giangviens\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\giangviens\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\dangkies\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\dangkies\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\lophocphans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\lophocphans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\lophocphans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\lophocphans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\monhocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\monhocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\sinhviens\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\sinhviens\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\dangkies\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\dangkies\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\monhocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\monhocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\giangviens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\giangviens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\giangviens\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\giangviens\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\models\\model.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\models\\model.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\models\\model.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\models\\model.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\models\\lophocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\models\\lophocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\models\\model.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\models\\model.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\models\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\models\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\monhocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\monhocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\lophocphans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\lophocphans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\lophocphans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\lophocphans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\controllers\\lophocphanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\controllers\\lophocphanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\lophocphans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\lophocphans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\khoas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\khoas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\cnpm\\areas\\admin\\views\\homeadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CAF92AA6-BFFF-49AA-83E7-7C97CD12E8CB}|CNPM\\CNPM.csproj|solutionrelative:cnpm\\areas\\admin\\views\\homeadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KHOAsController.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\KHOAsController.cs",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Controllers\\KHOAsController.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\KHOAsController.cs",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Controllers\\KHOAsController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T23:57:11.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SINHVIENsController.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\SINHVIENsController.cs",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Controllers\\SINHVIENsController.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\SINHVIENsController.cs",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Controllers\\SINHVIENsController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T23:55:18.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GIANGVIENsController.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\GIANGVIENsController.cs",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Controllers\\GIANGVIENsController.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\GIANGVIENsController.cs",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Controllers\\GIANGVIENsController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T23:54:46.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeAdminController.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T23:53:08.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_PartiaSideBar.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\Shared\\_PartiaSideBar.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\Shared\\_PartiaSideBar.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\Shared\\_PartiaSideBar.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\Shared\\_PartiaSideBar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T20:16:55.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\MONHOCs\\Details.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\MONHOCs\\Details.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\MONHOCs\\Details.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\MONHOCs\\Details.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T20:07:13.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\SINHVIENs\\Details.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\SINHVIENs\\Details.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\SINHVIENs\\Details.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\SINHVIENs\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T20:07:09.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\MONHOCs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\MONHOCs\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\MONHOCs\\Edit.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\MONHOCs\\Edit.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T20:05:00.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Edit.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Edit.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T20:04:32.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Index.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Index.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Index.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAE4AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:36:36.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DANGKiesController.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\DANGKiesController.cs",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Controllers\\DANGKiesController.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\DANGKiesController.cs",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Controllers\\DANGKiesController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAFQAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T19:18:33.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Details.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Details.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Details.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T20:09:20.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Details.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Details.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Details.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:30:49.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Index.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Index.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Index.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:16:42.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Edit.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Edit.cshtml",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAcwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:04:03.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Delete.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Delete.cshtml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAcwEIAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:05:56.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Create.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Create.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Create.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBcAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:05:33.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Model.Context.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\Model.Context.cs",
+              "RelativeDocumentMoniker": "CNPM\\Models\\Model.Context.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\Model.Context.cs",
+              "RelativeToolTip": "CNPM\\Models\\Model.Context.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCEAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T19:27:43.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Details.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Details.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Details.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Details.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAcwBUAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:03:35.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Model.Context.tt",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\Model.Context.tt",
+              "RelativeDocumentMoniker": "CNPM\\Models\\Model.Context.tt",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\Model.Context.tt",
+              "RelativeToolTip": "CNPM\\Models\\Model.Context.tt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-25T19:27:33.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\Model.cs",
+              "RelativeDocumentMoniker": "CNPM\\Models\\Model.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\Model.cs",
+              "RelativeToolTip": "CNPM\\Models\\Model.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T19:27:22.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\DANGKies\\Edit.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\DANGKies\\Edit.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:06:29.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Create.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Create.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\GIANGVIENs\\Create.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:09:52.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Model.tt",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\Model.tt",
+              "RelativeDocumentMoniker": "CNPM\\Models\\Model.tt",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\Model.tt",
+              "RelativeToolTip": "CNPM\\Models\\Model.tt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-07-25T19:27:16.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DANGKY.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\DANGKY.cs",
+              "RelativeDocumentMoniker": "CNPM\\Models\\DANGKY.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\DANGKY.cs",
+              "RelativeToolTip": "CNPM\\Models\\DANGKY.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T19:25:35.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Index.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Index.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:04:48.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LOPHOCPHAN.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\LOPHOCPHAN.cs",
+              "RelativeDocumentMoniker": "CNPM\\Models\\LOPHOCPHAN.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Models\\LOPHOCPHAN.cs",
+              "RelativeToolTip": "CNPM\\Models\\LOPHOCPHAN.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T19:00:26.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LOPHOCPHANsController.cs",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\LOPHOCPHANsController.cs",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Controllers\\LOPHOCPHANsController.cs",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Controllers\\LOPHOCPHANsController.cs",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Controllers\\LOPHOCPHANsController.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAmwGYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T19:02:46.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Delete.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Delete.cshtml",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAcwGEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:02:12.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Create.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Create.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\LOPHOCPHANs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T19:02:11.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\MONHOCs\\Create.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\MONHOCs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\MONHOCs\\Create.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\MONHOCs\\Create.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T18:57:25.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\KHOAs\\Create.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\KHOAs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\KHOAs\\Create.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\KHOAs\\Create.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwBUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T18:56:36.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "RelativeDocumentMoniker": "CNPM\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LygazGaming\\Desktop\\CNPM\\CNPM\\CNPM_new\\CNPM\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "RelativeToolTip": "CNPM\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T18:56:42.848Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

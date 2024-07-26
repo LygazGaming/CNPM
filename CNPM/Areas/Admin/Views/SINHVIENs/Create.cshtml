@@ -1,0 +1,137 @@
+﻿@model CNPM.Models.SINHVIEN
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content my-2">
+
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Thêm sinh viên mới</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @Html.ActionLink("Quay về", "Index", null, new { @class = "btn btn-info" })
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Mã sinh viên
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.MaSV, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.MaSV, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Họ và tên
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Giới tính</div>
+                        <div class="col-md-10">
+                            <label class="radio-inline">
+                                @Html.RadioButtonFor(model => model.GioiTinh, true) Nam
+                            </label>
+                            <label class="radio-inline">
+                                @Html.RadioButtonFor(model => model.GioiTinh, false) Nữ
+                            </label>
+                            @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Địa chỉ
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Niên khóa
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.NienKhoa, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.NienKhoa, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Số điện thoại
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.SoDienThoai, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.SoDienThoai, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Email
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Ngày sinh
+                        </div>
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.NgaySinh, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            Tên khoa
+                        </div>
+                        <div class="col-md-10">
+                            @Html.DropDownList("MaKhoa", null, htmlAttributes: new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.MaKhoa, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Tạo" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+}

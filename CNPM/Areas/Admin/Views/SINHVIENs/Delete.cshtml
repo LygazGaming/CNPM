@@ -1,0 +1,120 @@
+﻿@model CNPM.Models.SINHVIEN
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Main content -->
+        <section class="content my-2">
+
+            <!-- Default box -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Xóa sinh viên</strong>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            @Html.ActionLink("Quay về", "Index", null, new { @class = "btn btn-info" })
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Họ và tên
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.HoTen)
+                        </dd>
+
+                        <dt>
+                            Giới tính
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.GioiTinhHienThi)
+                        </dd>
+
+                        <dt>
+                            Địa chỉ
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.DiaChi)
+                        </dd>
+
+                        <dt>
+                            Niên khóa
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.NienKhoa)
+                        </dd>
+
+                        <dt>
+                            Số điện thoại
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.SoDienThoai)
+                        </dd>
+
+                        <dt>
+                            Email
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+
+                        <dt>
+                            Ngày sinh
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.NgaySinh)
+                        </dd>
+
+                        <dt>
+                            Mật khẩu
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.MatKhau)
+                        </dd>
+
+                        <dt>
+                            Tên khoa
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.KHOA.TenKhoa)
+                        </dd>
+
+                    </dl>
+
+
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Xóa" class="btn btn-default" /> 
+
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+        }
+
