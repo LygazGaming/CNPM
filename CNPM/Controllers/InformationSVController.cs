@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -15,8 +16,22 @@ namespace Manager.Controllers
         {
             Session["Email"] = email;
             SINHVIEN sv = db.SINHVIENs.Find(email);
-            var student = db.SINHVIENs.ToList();
-            return View();
+            if (sv == null)
+            {
+                return HttpNotFound();
+            }
+            else { 
+                if (sv.MaKhoa == null)
+                {
+                    sv.MaKhoa = "Khoa chưa cập nhật";
+                }
+                else
+                {
+                    Session["MaKhoa"] = sv.MaKhoa;
+                }
+            }
+           
+            return View(sv);
         }
 
         public ActionResult Timestamp()
@@ -26,6 +41,13 @@ namespace Manager.Controllers
         public ActionResult Result()
         {
             return View();
+        }
+        // show curriculum
+        public ActionResult Curriculum()
+        {
+            //fix it for me
+            var mONHOC = db.MONHOCs.Include(m => m.KHOA);
+            return View(mONHOC.ToList());
         }
     }
 }

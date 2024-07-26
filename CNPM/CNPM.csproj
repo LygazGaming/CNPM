@@ -2372,6 +2372,7 @@
     <Content Include="Views\ForgetPass\FormCode.cshtml" />
     <Content Include="Views\ForgetPass\FindEmail.cshtml" />
     <Content Include="Views\ForgetPass\ChangePass.cshtml" />
+    <Content Include="Views\InformationSV\Curriculum.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -12,17 +12,17 @@ using MailKit;
 using MimeKit;
 using static Org.BouncyCastle.Asn1.Cmp.Challenge;
 using System.Data.Entity;
+using Newtonsoft.Json.Linq;
 
 namespace CNPM.Controllers
 {
     public class ForgetPassController : Controller
     {
 
-
+        string code = "";
+        string countdefault = "0000000";
         // GET: ForgetPass
         DoAnEntities db = new DoAnEntities();
-        public string code = "";
-        string Email = "";
         public ActionResult FormCode()
         {
             return View();
@@ -30,6 +30,7 @@ namespace CNPM.Controllers
         [HttpPost]
         public ActionResult FormCode(String CODE)
         {
+            string count_string = TempData["Input"] as string;
             string code = TempData["Key"] as string;
             if (CODE.Equals(code))
             {
@@ -37,9 +38,27 @@ namespace CNPM.Controllers
             }
             else
             {
-                TempData["AlertMessage"] = "mã sai nhập lại";
-                TempData["AlertType"] = "alert-warning";
-                return View();
+                TempData["Key"] = code;
+             
+                if (count_string != null)
+                {
+                    int count = int.Parse(count_string.ToString());
+                    if (count < 6)
+                    {
+                        TempData["Input"] = (count + 1).ToString();
+                        TempData["AlertMessage"] = "mã sai nhập lại";
+                        TempData["AlertType"] = "alert-warning";
+                        return RedirectToAction("FormCode");
+                    }
+                    else
+                    {
+                        return RedirectToAction("FindEmail");
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("FormCode");
+                }
             }
         }
         public ActionResult FindEmail()
@@ -55,6 +74,8 @@ namespace CNPM.Controllers
             {
                 SendEmail(EMAIL);
                 TempData["Key"] = code;
+                TempData["Input"] = countdefault;
+                TempData["email"] = EMAIL;
                 return RedirectToAction("FormCode");
             }
             else
@@ -90,7 +111,6 @@ namespace CNPM.Controllers
 
                     smtp.Send(email);
                     smtp.Disconnect(true);
-                    Email = EMAIL;
                     return true;
                 }
             }
@@ -128,7 +148,9 @@ namespace CNPM.Controllers
                 }
                 else
                 {
-                    SINHVIEN sv = db.SINHVIENs.FirstOrDefault();
+                    string email = TempData["email"] as string;
+                    var list_sinhvien = db.SINHVIENs.Where(x => x.Email.Equals(email)).ToList();
+                    SINHVIEN sv = db.SINHVIENs.Find(list_sinhvien.FirstOrDefault().MaSV);
                     sv.MatKhau = NewPass;
                     db.Entry(sv).State = EntityState.Modified;
                     db.SaveChanges();
